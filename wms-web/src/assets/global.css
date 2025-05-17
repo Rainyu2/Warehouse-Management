@@ -1,0 +1,13 @@
+/* 重置所有元素的外边距和内边距 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 设置 html 和 body 占满视口 */
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* 防止出现滚动条 */
+}

@@ -1,0 +1,24 @@
+spring:
+  application:
+        name:
+             House
+  datasource:
+    url: jdbc:mysql://localhost:3308/wms?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+
+server:
+  port: 8090
+
+mybatis-plus:
+  configuration:
+     map-underscore-to-camel-case:
+                              true
+
+  global-config:
+    db-config:
+      id-type: none # 确保全局ID生成策略未覆盖实体类配置
+  mapper-locations: classpath*:mapper/*.xml  # 配置Mapper XML文件的路径
+
+
